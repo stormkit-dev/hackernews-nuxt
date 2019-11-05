@@ -1,9 +1,9 @@
 # Nuxt.js Hacker News
 
-HackerNews clone built with [Nuxt.js](https://nuxtjs.org).
+HackerNews clone built with [Nuxt.js](https://nuxtjs.org) and hosted on [Stormkit](https://www.stormkit.io).
 
 <p align="center">
-  <a href="https://hn.nuxtjs.org" target="_blank">
+  <a href="https://hn-nuxt.stormkit.dev" target="_blank">
     <img width="1090" alt="Screenshot 2019-06-04 at 13 27 51" src="https://user-images.githubusercontent.com/904724/58875721-97382400-86cc-11e9-94c6-af21544817bb.png">
     <br>
     Live Demo
@@ -12,13 +12,13 @@ HackerNews clone built with [Nuxt.js](https://nuxtjs.org).
 
 ## Modes
 
-- Universal: https://hn.nuxtjs.org
+- Universal: https://hn-nuxt.stormkit.dev
 
-> Hosted on [Now 2](https://zeit.co): `npm run build` + `now.json`
+> Hosted on [Stormkit](https://www.stormkit.io)
 
-- Single Page: https://hn-spa.nuxtjs.org
+- Single Page: https://hn-nuxt-spa.stormkit.dev
 
-> Hosted on [Netlify](https://www.netlify.com): `npm run build-spa` + `dist/` directory
+> Hosted on [Stormkit](https://www.stormkit.io)
 
 ## Performance
 
@@ -37,13 +37,13 @@ HackerNews clone built with [Nuxt.js](https://nuxtjs.org).
 - PWA experience using [PWA Module](https://pwa.nuxtjs.org) with almost _zero config_
 - PRPL
 - Hot reloading dev environment integrated with [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/)
-- Hosted on [Now 2](https://zeit.co/)
+- Hosted on [Stormkit](https://www.stormkit.io/)
 
 ## Build Setup
 
 **Requires Node.js 8+**
 
-``` bash
+```bash
 # install dependencies
 npm install # or yarn
 
@@ -77,6 +77,6 @@ For the communiy typescript fork please see [nuxt-community/hackernews-nuxt-ts](
 
 MIT
 
-## Credits 
+## Credits
 
 This repository is originally ported from [vue-hackernews-2.0](https://github.com/vuejs/vue-hackernews-2.0)
