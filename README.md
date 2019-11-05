@@ -14,11 +14,7 @@ HackerNews clone built with [Nuxt.js](https://nuxtjs.org) and hosted on [Stormki
 
 - Universal: https://hn-nuxt.stormkit.dev
 
-> Hosted on [Stormkit](https://www.stormkit.io)
-
-- Single Page: https://hn-nuxt-spa.stormkit.dev
-
-> Hosted on [Stormkit](https://www.stormkit.io)
+- Single Page: https://hn-nuxt--spa.stormkit.dev
 
 ## Performance
 
