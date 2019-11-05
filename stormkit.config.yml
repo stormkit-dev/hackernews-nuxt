@@ -1,24 +1,30 @@
 app:
-  redirects:
-    - from: /*
-      to: /index.html
-      assets: false
-      static: true
+  - redirects:      
+      - from: /_nuxt/*                    # Match paths that have this prefix
+        to: /
+        replace: true                     # Tell to replace /_nuxt/ with /, instead of redirecting to /
+        cdn: true                         # Tell to load URLs starting with /_nuxt/ from the CDN
+        host: hn-nuxt.stormkit.dev        # This rule should apply only for the universal mode
+     
+      - from: /*                          # The order matters so keep this as the last
+        to: /index.html
+        html: true                        # Tell to rewrite path only for html files
+        host: hn-nuxt--spa.stormkit.dev   # This rule should apply only for the spa mode
+        
+    envs:
+      - name: production
+        branch: master
+        publish: true
+        entry: nuxt.config.js
+        dist: .nuxt
+        cmd: yarn build
+        vars:
+          NODE_ENV: production
 
-  envs:
-    - name: production
-      branch: master
-      publish: true
-      entry: nuxt.config.js
-      dist: .nuxt
-      cmd: yarn build
-      vars:
-        NODE_ENV: production
-
-    - name: spa
-      branch: spa
-      publish: true
-      dist: dist
-      cmd: yarn build-spa
-      vars:
-        NODE_ENV: production
+      - name: spa
+        branch: spa
+        publish: true
+        dist: dist
+        cmd: yarn build-spa
+        vars:
+          NODE_ENV: production
