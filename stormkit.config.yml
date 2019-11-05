@@ -1,0 +1,24 @@
+app:
+  redirects:
+    - from: /*
+      to: /index.html
+      assets: false
+      static: true
+
+  envs:
+    - name: production
+      branch: master
+      publish: true
+      entry: nuxt.config.js
+      dist: .nuxt
+      cmd: yarn build
+      vars:
+        NODE_ENV: production
+
+    - name: spa
+      branch: spa
+      publish: true
+      dist: dist
+      cmd: yarn build-spa
+      vars:
+        NODE_ENV: production
