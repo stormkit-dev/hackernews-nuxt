@@ -14,7 +14,8 @@ HackerNews clone built with [Nuxt.js](https://nuxtjs.org) and hosted on [Stormki
 
 - Universal: https://hn-nuxt.stormkit.dev
 
-- Single Page: https://hn-nuxt-spa.stormkit.dev
+- Single Page: https://hn-nuxt--spa.stormkit.dev
+  > If you clone the repository, make sure to create an `spa` branch. Stormkit will look for that branch to deploy to the `spa` environment.
 
 ## Performance
 
