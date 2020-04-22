@@ -20,7 +20,7 @@ export default {
   manifest: {
     name: 'Nuxt Hacker News',
     short_name: 'Nuxt HN',
-    description: 'HackerNews clone built with Nuxt.js',
+    description: 'HackerNews clone built with Nuxt.js and hosted on Stormkit',
     theme_color: '#2F495E',
     start_url: '/news'
   },
